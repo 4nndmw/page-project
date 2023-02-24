@@ -14,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 1280px;
-  background-color: rgb(52, 52, 209);
+  background-color: rgb(55, 55, 69);
   border-radius: 10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
@@ -32,7 +32,6 @@ body {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   background-color: #eaeaea;
   border-radius: 10px;
-
   width: 100%;
   max-width: 1280px;
   margin: 30px auto;
@@ -46,6 +45,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
   gap: 40px;
   padding: 50px;
 }
@@ -57,18 +57,32 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transition: all 0.1s ease-in;
 }
+.card:hover {
+  opacity: 80%;
+}
+
 .card a {
   text-decoration: none;
   color: #ddd;
   margin-top: 10px;
-  background-color: rgb(52, 52, 209);
+  background-color: rgb(55, 55, 69);
   padding: 5px 90px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
+  transition: all 0.2s ease-in;
 }
+.card a:hover {
+  padding: 5px 110px;
+}
+
 img {
   height: 200px;
   width: 350px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+img:hover {
+  transition: all 0.2s ease-in;
+  width: 352px;
 }
